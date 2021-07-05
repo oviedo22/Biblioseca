@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{9E790765-6F01-4BB7-9147-4BD474A8324F}"
 	ProjectSection(SolutionItems) = preProject
 		resources\1.Modelo-de-negocio.md = resources\1.Modelo-de-negocio.md
+		resources\example.config = resources\example.config
 		resources\template.hbm.xml = resources\template.hbm.xml
 	EndProjectSection
 EndProject
