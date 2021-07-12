@@ -21,20 +21,15 @@ namespace Biblioseca.ConsoleApp
             ISession session = isessionFactory.OpenSession();
 
             Author author = new Author();
+            Book book = new Book();
 
-            author.FirstName = "Ernesto";
-            author.LastName = "Sábato";
+            book.Title = "Operación Masacre";
+            book.AuthorId = 4;
+            book.Description = "Trata sobre una operación que terminó en Masacre";
+            book.Category = "Novela No Ficción";
+            book.ISBN = "978-950-515-352-7";
 
-            Author author2 = new Author();
-            author2.FirstName = "Ernesto";
-            author2.LastName = "Lapadula";
-
-            Author author3 = new Author();
-            author3.FirstName = "Borges";
-            author3.LastName = "Borges";
-
-            session.Save(author3);
-            Console.WriteLine(author3.Id);
+            session.Save(book);
             Console.ReadKey();
 
         }
