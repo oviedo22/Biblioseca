@@ -8,6 +8,10 @@ namespace Biblioseca.Model
 {
     public class Member
     {
+        public Member()
+        {
+            Lendings = new HashSet<Lending>();
+        }
 
         public virtual int Id { get; set; }
                
@@ -16,6 +20,8 @@ namespace Biblioseca.Model
         public virtual string LastName { get; set; }
 
         public virtual string Username { get; set; }
+
+        public virtual ISet<Lending> Lendings { get; set; }
 
     }
 }

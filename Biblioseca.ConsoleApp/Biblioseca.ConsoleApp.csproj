@@ -73,6 +73,10 @@
       <Project>{329ac8d6-b647-482d-9f73-5f8b9cbe5051}</Project>
       <Name>Biblioseca.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccess\Biblioseca.DataAccess.csproj">
+      <Project>{e3aa2d73-c755-40ef-a38d-18e89bf1e953}</Project>
+      <Name>Biblioseca.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

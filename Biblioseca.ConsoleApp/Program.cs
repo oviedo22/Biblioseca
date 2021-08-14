@@ -20,16 +20,17 @@ namespace Biblioseca.ConsoleApp
 
             ISession session = isessionFactory.OpenSession();
 
-            Author author = new Author();
-            Book book = new Book();
+            Author author = session.Get<Author>(1);
+            Category category = session.Get<Category>(1);
+            Book book = session.Get<Book>(1);
 
-            book.Title = "Operación Masacre";
-            book.AuthorId = 4;
-            book.Description = "Trata sobre una operación que terminó en Masacre";
-            book.Category = "Novela No Ficción";
-            book.ISBN = "978-950-515-352-7";
+            Lending lending = new Lending();
 
-            session.Save(book);
+
+            //Console.WriteLine(book.Category.Name);
+
+
+   
             Console.ReadKey();
 
         }
